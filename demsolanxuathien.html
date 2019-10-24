@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x =[];
+    for (let i =0; i<100;i++) {
+        x[i] = Math.floor(Math.random() * 101);
+    }
+    document.write(x);
+    document.write('<br>');
+    let count = 0;
+    let a = parseInt(prompt("Nhập số cần đếm trong mảng x: "));
+    function countNumb(x) {
+        for (let j =0; j <x.length;j++){
+            if (a == x[j]){
+                count ++;
+            }
+        }
+        return count;
+    }
+    let countnumber = countNumb(x);
+    document.write("Số a xuất hiện số lần là : " + countnumber);
+</script>
+</body>
+</html>
